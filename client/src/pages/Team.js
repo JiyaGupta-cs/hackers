@@ -12,6 +12,7 @@ import shreya from './images/shreya.png'
 import aryan from './images/aryan.png'
 import sahil from './images/sahil.png'
 import akshay from './images/akshay.png'
+import Footer from './Footer'
 
 const Team = () => {
     // const banner = './images/team_banner';
@@ -108,6 +109,7 @@ const Team = () => {
     
 </div>
 </section>
+<Footer/>
     </div>
   )
 }
