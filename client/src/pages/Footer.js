@@ -7,7 +7,7 @@ const Footer = () => {
 <footer
   class="bg-black text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
   
-  <div class="mx-56 py-10 text-center md:text-left">
+  <div class="mx-6 sm:mx-56 py-10 text-center md:text-left">
     <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
     
       
@@ -63,8 +63,8 @@ const Footer = () => {
     </div>
   </div>
 
-  <div class="bg-black p-6 text-center dark:bg-neutral-700 flex flex-col sm:flex-row sm:justify-around items-center">
-    <img src={footerlogo} alt="" className='w-[20vw]' />
+  <div class="bg-black p-6 text-center dark:bg-neutral-700 flex flex-col sm:flex-row sm:justify-around items-center gap-6">
+    <img src={footerlogo} alt="" className='w-[70vw] sm:w-[20vw]' />
     <span className='text-white'>© Copyright 2023 Technocrats - Developed by Technocrats</span>    
   </div>
 </footer>
