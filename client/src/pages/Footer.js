@@ -56,8 +56,8 @@ const Footer = () => {
           class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
           ‎
         </h6>
-        <p className='text-white'>
-        Write to us at: abc@gmail.com
+        <p className='text-white gap-2 '>
+        Write to us at: ‎ <a href='mailto:technocrats@kiet.edu' className='font-semibold text-white'> technocrats@kiet.edu</a>
         </p>
       </div>
     </div>
