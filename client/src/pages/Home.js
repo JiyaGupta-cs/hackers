@@ -1,17 +1,15 @@
 import React from 'react';
 import HomeBg from './images/HomeBg.png';
-import Footer from './Footer';
-// import Carousel from './Carousal';
+import Carousel from './Carousel';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
 import About from './About';
-// import EventSection from './Event';
+import EventSection from './Event';
 
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+
       <div className='team' style={{ backgroundColor: 'black' }}>
         <div className='flex flex-col md:flex-row justify-center items-center
          px-4 md:px-0'>
@@ -34,11 +32,10 @@ const Home = () => {
           </div>
         </div>
        <About/>
-       {/* <EventSection/>
+       <EventSection/>
        
-        <Carousel/> */}
+        <Carousel/>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -6,13 +6,13 @@ import SmallPic3 from './images/3.png';
 import SmallPic4 from './images/4.png';
 import SmallPic5 from './images/5.png';
 import SmallPic6 from './images/6.png';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 const About = () => {
   return (
-    <div className='bg-black'>
-      <div className="flex flex-col md:flex-row justify-center items-center mx-auto max-w-screen-lg px-4 md:px-0">
-        <img className="pic1 w-full md:w-3/5 mt-24 md:mt-0 md:mr-8" src={AboutPic} alt="foccu" />
+    <div className=' bg-black '>
+      <div className="flex flex-colmd:flex-row justify-center items-center mx-auto max-w-screen-lg px-4 md:px-0">
+        <img className="pic1 w-full md:w-[600px] mt-24 md:mt-0 md:mr-8" src={AboutPic} alt="foccu" />
         <div className="flex flex-col justify-center mt-6 md:mt-0 md:ml-8">
           <p className="para text-2xl text-white">
             What is
@@ -36,22 +36,22 @@ const About = () => {
             </div>
             <div className="flex flex-wrap justify-center items-center w-full">
               <div className="flex flex-col items-center p-4">
-                <img className="w-18" src={SmallPic4} alt="Small Pic 4" />
+                <img className="w-20" src={SmallPic4} alt="Small Pic 4" />
                 <p className="text-white mt-4">Stay Updated</p>
               </div>
               <div className="flex flex-col items-center p-4">
-                <img className="w-18" src={SmallPic5} alt="Small Pic 5" />
+                <img className="w-20" src={SmallPic5} alt="Small Pic 5" />
                 <p className="text-white mt-4">Challenges yourself</p>
               </div>
               <div className="flex flex-col items-center p-4">
-                <img className="w-18" src={SmallPic6} alt="Small Pic 6" />
+                <img className="w-20" src={SmallPic6} alt="Small Pic 6" />
                 <p className="text-white mt-4">Fuel your passion</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
