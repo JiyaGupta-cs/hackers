@@ -4,7 +4,7 @@ import Footer from './Footer';
 // import Carousel from './Carousal';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
-// import About from './About';
+import About from './About';
 // import EventSection from './Event';
 
 
@@ -33,8 +33,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-       {/* <About/>
-       <EventSection/>
+       <About/>
+       {/* <EventSection/>
        
         <Carousel/> */}
       </div>

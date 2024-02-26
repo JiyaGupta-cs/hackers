@@ -2,6 +2,7 @@ import Footer from "./Footer";
 import banner from "./images/team_banner.png";
 import hacker from "./images/hacker.jpg"
 import { useState } from "react";
+import Navbar from "./Navbar";
 
 const Registration = () => {
 const [name,setName] = useState('')
@@ -13,6 +14,7 @@ const [company,setCompany] = useState('')
 
   return (
     <div>
+    <Navbar/>
       <section
         className={`bg-cover bg-no-repeat h-[60vh] sm:h-screen flex flex-col justify-center items-center gap-8 `}
         style={{ backgroundImage: `url(${hacker})` }}
