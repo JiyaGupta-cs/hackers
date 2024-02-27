@@ -10,7 +10,7 @@ import SmallPic6 from "./images/6.png";
 
 const About = () => {
   return (
-    <div className=" bg-black pt-10">
+    <div className=" bg-black pt-10 overflow-hidden">
       <div className="flex flex-wrap justify-around ">
 
         <div className="">
@@ -32,19 +32,29 @@ const About = () => {
             local meetups, online forums, and platform-specific events.
           </p>
           <div className="flex flex-wrap justify-center items-center w-full">
+
+            <div className="flex justify-around w-screen ">
+
             <div className="flex flex-col items-center p-4">
-              <img className="w-20 " src={SmallPic1} alt="Small Pic 1" />
+              <img className="w-22 " src={SmallPic1} alt="Small Pic 1" />
               <p className="text-white mt-6">Learn</p>
             </div>
             <div className="flex flex-col items-center p-4">
-              <img className="w-20" src={SmallPic2} alt="Small Pic 2" />
+              <img className="w-22" src={SmallPic2} alt="Small Pic 2" />
               <p className="text-white mt-2">Network</p>
             </div>
             <div className="flex flex-col items-center p-4">
-              <img className="w-20" src={SmallPic3} alt="Small Pic 3" />
+              <img className="w-22" src={SmallPic3} alt="Small Pic 3" />
               <p className="text-white mt-2">Contribute</p>
             </div>
+      
+            </div>
+              
+
+
             <div className="flex flex-wrap justify-center items-center w-full">
+            <div className="flex justify-around w-screen ">
+
               <div className="flex flex-col items-center p-4">
                 <img className="w-18" src={SmallPic4} alt="Small Pic 4" />
                 <p className="text-white mt-9">Stay Updated</p>
@@ -56,7 +66,11 @@ const About = () => {
               <div className="flex flex-col items-center p-4">
                 <img className="w-18" src={SmallPic6} alt="Small Pic 6" />
                 <p className="text-white mt-4">Fuel your passion</p>
-              </div>
+                </div>
+                
+
+            </div>
+
             </div>
           </div>
         </div>

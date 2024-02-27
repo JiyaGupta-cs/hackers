@@ -38,7 +38,7 @@ const Carousel = () => {
           {images.map((_, index) => (
             <button
               key={index}
-              className={`dot mx-1 h-3 w-3 rounded-full ${index === currentSlide ? 'bg-black' : 'bg-gray-400'}`}
+              className={`dot mx-1 h-3 w-3 rounded-full ${index === currentSlide ? 'bg-black hover:bg-red-600' : 'bg-gray-400'}`}
               onClick={() => setCurrentSlide(index)}
             />
           ))}
