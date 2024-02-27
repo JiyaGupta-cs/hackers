@@ -1,25 +1,35 @@
-import React from 'react';
-import AboutPic from './images/Aboutpic.png';
-import SmallPic1 from './images/1.png';
-import SmallPic2 from './images/2.png';
-import SmallPic3 from './images/3.png';
-import SmallPic4 from './images/4.png';
-import SmallPic5 from './images/5.png';
-import SmallPic6 from './images/6.png';
+import React from "react";
+import AboutPic from "./images/Aboutpic.png";
+import SmallPic1 from "./images/1.png";
+import SmallPic2 from "./images/2.png";
+import SmallPic3 from "./images/3.png";
+import SmallPic4 from "./images/4.png";
+import SmallPic5 from "./images/5.png";
+import SmallPic6 from "./images/6.png";
 // import Footer from './Footer';
 
 const About = () => {
   return (
-    <div className=' bg-black '>
-      <div className="flex flex-colmd:flex-row justify-center items-center mx-auto max-w-screen-lg px-4 md:px-0">
-        <img className="pic1 w-full md:w-[600px] mt-24 md:mt-0 md:mr-8" src={AboutPic} alt="foccu" />
-        <div className="flex flex-col justify-center mt-6 md:mt-0 md:ml-8">
-          <p className="para text-2xl text-white">
-            What is
-          </p>
-          <h1 className="text-red-600 text-5xl font-bold mb-6">Hacker's Meet-up</h1>
+    <div className=" bg-black ">
+      <div className="flex flex-wrap justify-around ">
+
+        <div className="">
+          <img src={AboutPic} alt="foccu" className="w-full" />
+        </div>
+
+
+        <div className="flex flex-col w-1/2 ">
+           <p className=" text-2xl text-white">What is</p>
+           <h1 className="text-red-600 text-5xl font-bold mb-6">
+            Hacker's Meet-up
+           </h1>
           <p className="text-white mb-5">
-            "Hackers Meet up" can refer to various gatherings of hackers and cybersecurity enthusiasts. The most prominent one is The Hacker's Meetup, a series of monthly events in India focused on sharing knowledge and building community around vulnerability research, ethical hacking, and security awareness. Other possibilities include local meetups, online forums, and platform-specific events.
+            "Hackers Meet up" can refer to various gatherings of hackers and
+            cybersecurity enthusiasts. The most prominent one is The Hacker's
+            Meetup, a series of monthly events in India focused on sharing
+            knowledge and building community around vulnerability research,
+            ethical hacking, and security awareness. Other possibilities include
+            local meetups, online forums, and platform-specific events.
           </p>
           <div className="flex flex-wrap justify-center items-center w-full">
             <div className="flex flex-col items-center p-4">
@@ -51,7 +61,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <Footer/> */}
+      
     </div>
   );
 };
