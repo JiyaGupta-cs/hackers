@@ -11,25 +11,33 @@ const Home = () => {
     <div>
 
       <div className='team' style={{ backgroundColor: 'black' }}>
-        <div className='flex flex-col md:flex-row justify-center items-center
-         px-4 md:px-0'>
-          <img className='pic2 w-full md:w-auto md:max-w-1/2' src={HomeBg} alt="KIET Chapter" />
-          <div className='flex flex-col justify-center md:ml-8 mt-4 md:mt-0'>
-            <h1 className="heading  text-white md:mr-32 text-7xl md:text-7xl font-bold flex items-center">
-              <span className='text-red-600 mr-2'>KIET</span>
-              <span className='text-white'>CHAPTER</span>
+        <div className='flex flex-col flex-wrap md:flex-row justify-center items-center
+         px-0 md:px-0 '>
+          <img className='' src={HomeBg} alt="KIET Chapter" />
+
+
+          <div className='flex flex-col justify-center '>
+            <h1 className=" flex justify-center  gap-2heading text-white  font-bold items-center">
+              <span className='text-red-600 text-5xl mr-2'>KIET</span>
+              <span className='text-white text-5xl'>CHAPTER</span>
             </h1>
-            <p className="text-white text-2xl ml-14 md:text-2xl md:ml-20">
+            <div className='flex justify-center place-content-center '>
+
+            <p className="text-white text-2xl md:text-2xl ">
               Remember: Protection is the Goal
             </p>
-            <div className="btn flex justify-center pt-5 md:mt-0">
+            </div>
+            <div className=" flex justify-center place-content-center items-center pt-5">
               <Link to="/registration">
-                <button className="btn-1 bg-red-600 text-white text-lg md:mr-16 px-12 py-3 rounded-xl">
+                <button className="btn-1 bg-red-600 text-white text-lg  px-12 py-3 rounded-xl">
                   Register Now
                 </button>
               </Link>
             </div>
           </div>
+
+
+
         </div>
        <About/>
        <EventSection/>
