@@ -10,7 +10,7 @@ import SmallPic6 from "./images/6.png";
 
 const About = () => {
   return (
-    <div className=" bg-black ">
+    <div className=" bg-black  mt-24 md:mt-20 ">
       <div className="flex flex-wrap justify-around ">
 
         <div className="">
@@ -33,28 +33,28 @@ const About = () => {
           </p>
           <div className="flex flex-wrap justify-center items-center w-full">
             <div className="flex flex-col items-center p-4">
-              <img className="w-20" src={SmallPic1} alt="Small Pic 1" />
-              <p className="text-white mt-4">Learn</p>
+              <img className="w-20 " src={SmallPic1} alt="Small Pic 1" />
+              <p className="text-white mt-6">Learn</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <img className="w-20" src={SmallPic2} alt="Small Pic 2" />
-              <p className="text-white mt-4">Network</p>
+              <p className="text-white mt-2">Network</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <img className="w-20" src={SmallPic3} alt="Small Pic 3" />
-              <p className="text-white mt-4">Contribute</p>
+              <p className="text-white mt-2">Contribute</p>
             </div>
             <div className="flex flex-wrap justify-center items-center w-full">
               <div className="flex flex-col items-center p-4">
-                <img className="w-20" src={SmallPic4} alt="Small Pic 4" />
-                <p className="text-white mt-4">Stay Updated</p>
+                <img className="w-18" src={SmallPic4} alt="Small Pic 4" />
+                <p className="text-white mt-9">Stay Updated</p>
               </div>
               <div className="flex flex-col items-center p-4">
-                <img className="w-20" src={SmallPic5} alt="Small Pic 5" />
+                <img className="w-18" src={SmallPic5} alt="Small Pic 5" />
                 <p className="text-white mt-4">Challenges yourself</p>
               </div>
               <div className="flex flex-col items-center p-4">
-                <img className="w-20" src={SmallPic6} alt="Small Pic 6" />
+                <img className="w-18" src={SmallPic6} alt="Small Pic 6" />
                 <p className="text-white mt-4">Fuel your passion</p>
               </div>
             </div>
