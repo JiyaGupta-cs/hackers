@@ -10,7 +10,7 @@ import SmallPic6 from "./images/6.png";
 
 const About = () => {
   return (
-    <div className=" bg-black pt-10 ">
+    <div className=" bg-black pt-10">
       <div className="flex flex-wrap justify-around ">
 
         <div className="">
