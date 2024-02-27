@@ -100,11 +100,11 @@ const Footer = () => {
             >KIET Group of Institutions</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-white"
+          <a href="/about" class="text-white"
             >About Us</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-white"
+          <a href="/event" class="text-white"
             >Join Us</a>
         </p>
       </div>
@@ -115,11 +115,11 @@ const Footer = () => {
           ‎ 
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-white"
+          <a href="/event" class="text-white"
             >Chapter Guidelines</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-white"
+          <a href="/team" class="text-white"
             >Meet the team</a          >
         </p>
         <p class="mb-4">
