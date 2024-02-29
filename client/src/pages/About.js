@@ -37,7 +37,7 @@ const About = () => {
 
             <div className="flex flex-col items-center p-4">
               <img className="w-22 " src={SmallPic1} alt="Small Pic 1" />
-              <p className="text-white mt-6">Learn</p>
+              <p className="text0-white mt-6">Learn</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <img className="w-22" src={SmallPic2} alt="Small Pic 2" />

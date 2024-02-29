@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import footerlogo from './images/footer_logo.png'
+import { Link } from 'react-router-dom';
 const Footer = () => {
  
   const [faqData, setFaqData] = useState([]);
@@ -96,7 +97,7 @@ const Footer = () => {
           Explore
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-white"
+          <a href="https://www.kiet.edu/" class="text-white"
             >KIET Group of Institutions</a>
         </p>
         <p class="mb-4">
@@ -143,13 +144,13 @@ const Footer = () => {
   </div>
 
   <div className="bg-black p-6 text-center dark:bg-neutral-700 flex flex-col sm:flex-row sm:justify-around items-center gap-6">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.893214057894!2d77.49584577474205!3d28.75260507861928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf47204fb9241%3A0xd11ed4123c7691fe!2sKIET%20GROUP%20OF%20INSTITUTIONS%2C%20Muradnagar%2C%20Uttar%20Pradesh%20201206!5e0!3m2!1sen!2sin!4v1708115942846!5m2!1sen!2sin" className='w-[90vw] h-[80vw] sm:w-[1087px] sm:h-[341px]' style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.893214057894!2d77.49584577474205!3d28.75260507861928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf47204fb9241%3A0xd11ed4123c7691fe!2sKIET%20GROUP%20OF%20INSTITUTIONS%2C%20Muradnagar%2C%20Uttar%20Pradesh%20201206!5e0!3m2!1sen!2sin!4v1708115942846!5m2!1sen!2sin" className='w-[90vw] h-[80vw] sm:w-[1087px] sm:h-[341px]' style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
   </div>
 
  
   
   <div className="bg-black p-6 text-center dark:bg-neutral-700 flex flex-col sm:flex-row sm:justify-around items-center gap-6 sm:pb-10">
-    <img src={footerlogo} alt="" className='w-[70vw] sm:w-[20vw]' />
+  <Link to="/home"> <img src={footerlogo} alt="" className='w-[70vw] sm:w-[20vw]' /></Link>
     <span className='text-white'>© Copyright 2023 Technocrats - Developed by Technocrats</span>    
   </div>
 
