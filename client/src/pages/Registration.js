@@ -1,16 +1,43 @@
-import hacker from "./images/hacker.jpg"
-import { useState } from "react";
+import hacker from "./images/hacker.jpg";
+import { useState, useEffect } from "react";
 
 const Registration = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [interest, setInterest] = useState('');
-  const [occupation, setOccupation] = useState('');
-  const [company, setCompany] = useState('');
-  const [nameError, setNameError] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [phoneError, setPhoneError] = useState('');
+  const [name, setName] = useState(" ");
+  const [email, setEmail] = useState(" ");
+  const [phone, setPhone] = useState(" ");
+  const [interest, setInterest] = useState(" ");
+  const [occupation, setOccupation] = useState(" ");
+  const [company, setCompany] = useState(" ");
+  const [nameError, setNameError] = useState(" ");
+  const [emailError, setEmailError] = useState(" ");
+  const [phoneError, setPhoneError] = useState(" ");
+
+  const [data, setdata] = useState({
+    name:name,
+    email:email,
+    phone:phone,
+    interest:interest,
+    occupation:occupation,
+    company:company,
+    nameError:nameError,
+    emailError:emailError,
+    phoneError:phoneError,
+  });
+
+  useEffect(() => {
+    setdata({
+      name:name,
+      email:email,
+      phone:phone,
+      interest:interest,
+      occupation:occupation,
+      company:company,
+      nameError:nameError,
+      emailError:emailError,
+      phoneError:phoneError,
+    })
+    console.log(data);
+  },[]);
 
   const validateEmail = (email) => {
     // Regular expression for email validation
@@ -26,35 +53,63 @@ const Registration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Resetting errors
-    setNameError('');
-    setEmailError('');
-    setPhoneError('');
+    setNameError("");
+    setEmailError("");
+    setPhoneError("");
 
-    // Validation checks
     let isValid = true;
 
     if (name.length < 6) {
-      setNameError('Name should be at least 6 characters long');
+      setNameError("Name should be at least 6 characters long");
       isValid = false;
     }
 
     if (!validateEmail(email)) {
-      setEmailError('Please enter a valid email address');
+      setEmailError("Please enter a valid email address");
       isValid = false;
     }
 
     if (!validatePhone(phone)) {
-      setPhoneError('Phone number should contain 10 digits only');
+      setPhoneError("Phone number should contain 10 digits only");
       isValid = false;
     }
 
     // If form is valid, you can proceed with submission
     if (isValid) {
       // Add your form submission logic here
-      console.log('Form submitted successfully');
+      console.log("Form submitted successfully");
     }
+
+    setdata({
+      name:name,
+      email:email,
+      phone:phone,
+      interest:interest,
+      occupation:occupation,
+      company:company,
+      nameError:nameError,
+      emailError:emailError,
+      phoneError:phoneError,
+    })
+
+    fetch("http://localhost:4000/register", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        // add any other headers if required
+      },
+      body: JSON.stringify(data),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   };
+
+
 
   return (
     <div>
@@ -72,8 +127,12 @@ const Registration = () => {
         </div>
       </section>
       <div className=" bg-black w-full flex justify-center p-4">
-        <form onSubmit={handleSubmit} className=" w-full lg:w-2/3 bg-white p-4 rounded-lg">
-          <div className="font-semibold text-2xl">Book your slot for the upcoming event !!
+        <form
+          onSubmit={handleSubmit}
+          className=" w-full lg:w-2/3 bg-white p-4 rounded-lg"
+        >
+          <div className="font-semibold text-2xl">
+            Book your slot for the upcoming event !!
             <div className="h-[.15rem] bg-red-500 w-24 my-1"></div>
           </div>
           <div className="w-full md:w-full mb-4 mt-8">
@@ -175,11 +234,14 @@ const Registration = () => {
             />
           </div>
 
-
-
-
           <div className="mt-12 mb-8 flex justify-center">
-            <button type="submit" className="py-2 px-16 bg-red-500 rounded-lg text-white">Register Now</button>
+            <button
+              type="submit"
+              className="py-2 px-16 bg-red-500 rounded-lg text-white"
+
+            >
+              Register Now
+            </button>
           </div>
         </form>
       </div>
