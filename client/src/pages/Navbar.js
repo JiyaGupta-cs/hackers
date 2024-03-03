@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogoImage from './images/logo.png'; 
+import Registration from './Registration';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,7 @@ const Navbar = () => {
         <Link to="/about" className="mr-4">About</Link>
         <Link to="/team" className="mr-4">Team</Link>
         <Link to="/event">Event</Link>
+        <Link to="/registration" className='mr-4'>Register </Link>
       </div>
       <button
         className="md:hidden text-2xl focus:outline-none"
@@ -32,6 +34,7 @@ const Navbar = () => {
           <Link to="/about" className="block mb-2">About</Link>
           <Link to="/team" className="block mb-2">Team</Link>
           <Link to="/event" className="block">Event</Link>
+          <Link to="/registration" className='block mb-2'>Register </Link>
         </div>
       )}
     </nav>

@@ -186,7 +186,6 @@ const Registration = () => {
             />
             {phoneError && <p className="text-red-500">{phoneError}</p>}
           </div>
-          {/* Add other fields similarly */}
           <div class="w-full md:w-full  my-6">
             <label
               class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "

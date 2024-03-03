@@ -97,7 +97,7 @@ const Footer = () => {
           Explore
         </h6>
         <p class="mb-4">
-          <a href="https://www.kiet.edu/" class="text-white"
+          <a href="https://www.kiet.edu/" target='_blank' class="text-white"
             >KIET Group of Institutions</a>
         </p>
         <p class="mb-4">
@@ -105,7 +105,7 @@ const Footer = () => {
             >About Us</a>
         </p>
         <p class="mb-4">
-          <a href="/event" class="text-white"
+          <a href="https://discord.gg/zCHzmxADmZ" target='_blank' class="text-white"
             >Join Us</a>
         </p>
       </div>
@@ -124,7 +124,7 @@ const Footer = () => {
             >Meet the team</a          >
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-white"
+          <a href="/footer" class="text-white"
             >FAQs</a          >
         </p>
         
