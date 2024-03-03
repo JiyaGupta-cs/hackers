@@ -1,43 +1,45 @@
 import hacker from "./images/hacker.jpg";
 import { useState, useEffect } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Registration = () => {
-  const [name, setName] = useState(" ");
-  const [email, setEmail] = useState(" ");
-  const [phone, setPhone] = useState(" ");
-  const [interest, setInterest] = useState(" ");
-  const [occupation, setOccupation] = useState(" ");
-  const [company, setCompany] = useState(" ");
-  const [nameError, setNameError] = useState(" ");
-  const [emailError, setEmailError] = useState(" ");
-  const [phoneError, setPhoneError] = useState(" ");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [interest, setInterest] = useState("");
+  const [occupation, setOccupation] = useState("");
+  const [company, setCompany] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
 
   const [data, setdata] = useState({
-    name:name,
-    email:email,
-    phone:phone,
-    interest:interest,
-    occupation:occupation,
-    company:company,
-    nameError:nameError,
-    emailError:emailError,
-    phoneError:phoneError,
+    name: name,
+    email: email,
+    phone: phone,
+    interest: interest,
+    occupation: occupation,
+    company: company,
+    nameError: nameError,
+    emailError: emailError,
+    phoneError: phoneError,
   });
 
   useEffect(() => {
     setdata({
-      name:name,
-      email:email,
-      phone:phone,
-      interest:interest,
-      occupation:occupation,
-      company:company,
-      nameError:nameError,
-      emailError:emailError,
-      phoneError:phoneError,
-    })
+      name: name,
+      email: email,
+      phone: phone,
+      interest: interest,
+      occupation: occupation,
+      company: company,
+      nameError: nameError,
+      emailError: emailError,
+      phoneError: phoneError,
+    });
     console.log(data);
-  },[]);
+  }, []);
 
   const validateEmail = (email) => {
     // Regular expression for email validation
@@ -74,47 +76,59 @@ const Registration = () => {
       isValid = false;
     }
 
-    // If form is valid, you can proceed with submission
     if (isValid) {
-      // Add your form submission logic here
+      toast("Form submitted !");
+
       console.log("Form submitted successfully");
-    }
 
-    setdata({
-      name:name,
-      email:email,
-      phone:phone,
-      interest:interest,
-      occupation:occupation,
-      company:company,
-      nameError:nameError,
-      emailError:emailError,
-      phoneError:phoneError,
-    })
-
-    fetch("http://localhost:4000/register", {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json',
-        // add any other headers if required
-      },
-      body: JSON.stringify(data),
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
+      setdata({
+        name: name,
+        email: email,
+        phone: phone,
+        interest: interest,
+        occupation: occupation,
+        company: company,
+        nameError: nameError,
+        emailError: emailError,
+        phoneError: phoneError,
       });
+
+      fetch("http://localhost:4000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          // add any other headers if required
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+      
+      setCompany("");
+      setEmail("");
+      setEmailError("");
+      setInterest("");
+      setName("");
+      setNameError("");
+      setOccupation("");
+      setPhone("");
+      setPhoneError("");
+      setdata("");
+    
+    }
   };
-
-
 
   return (
     <div>
+        <ToastContainer  />
+
       <section
-        className={`bg-cover bg-no-repeat h-[60vh] sm:h-screen flex flex-col justify-center items-center gap-8 `}
+        className={`bg-cover bg-no-repeat h-full sm:h-full flex flex-col  items-center gap-8  `}
         style={{ backgroundImage: `url(${hacker})` }}
       >
         <div className="inline-block m-0 text-transparent bg-[url('https://s3-alpha-sig.figma.com/img/94e1/68cb/3a0c7f4b515c899c5550dc4331074056?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cGWCb4cdmGdNk5NfTsy~WmX7iTm-IhvP4PQeXzYOD5eXZiqAcx5Ub4ubIUbQDm2YhcD-rmZK-gLMv69TjhQoV~3bsHSFTGMPlWmnoXi4HAH5nU747R6mGI0~YultVPgiSfX1ag6~IE4hbMTq78V1OQwWIfBcd7K1HarZajFqPKICjti4KU4KQKQGHM34mntqqAc2fZy84-s8irlOZm3cwxHY4tR~ODFGYOSPwhAHfkQ5UVDOcFW6cOvIC8WnD2NrV09zm9cBSfk0lFLRtPIWm6e5uRiOpzXiNQenrgEeAGUFCXhWLJJcq9GaA~a9U3s3JntQ5nBYbtj~4pZNbtNAEA__')] bg-cover bg-no-repeat bg-center bg-clip-text">
@@ -125,8 +139,7 @@ const Registration = () => {
             Registration Form
           </h1>
         </div>
-      </section>
-      <div className=" bg-black w-full flex justify-center p-4">
+      <div className=" w-full flex justify-center p-4">
         <form
           onSubmit={handleSubmit}
           className=" w-full lg:w-2/3 bg-white p-4 rounded-lg"
@@ -237,13 +250,15 @@ const Registration = () => {
             <button
               type="submit"
               className="py-2 px-16 bg-red-500 rounded-lg text-white"
-
             >
               Register Now
             </button>
           </div>
-        </form>
-      </div>
+          </form>
+          
+        </div>
+      </section>
+        
     </div>
   );
 };
