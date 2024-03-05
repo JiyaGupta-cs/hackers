@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import image1 from "./images/Carouselpic1.png";
-import image2 from "./images/Carouselpic1.png";
-import image3 from "./images/Carouselpic1.png";
+import image2 from "./images/cyber1.jpg";
+import image3 from "./images/cyber2.jpg";
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -44,10 +44,10 @@ const Carousel = () => {
           ))}
         </div>
       </div>
-      <div className="flex">
+      {/* <div className="flex">
         <button className="prev mr-2" onClick={prevSlide}>Previous</button>
         <button className="next" onClick={nextSlide}>Next</button>
-      </div>
+      </div> */}
     </div>
   );
 };

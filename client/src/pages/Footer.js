@@ -8,7 +8,7 @@ const Footer = () => {
   const [answersVisible, setAnswersVisible] = useState([]);
 
   useEffect(() => {
-      // Fetch FAQ data from an API or define it locally
+      
       const fetchedFaqData = [
           { id: 1, question: "How much is the ticket for?", answer: "We’re glad to share that is a charge-free community and tickets are sent out before the event on a first come first serve basis" },
           { id: 2, question: "What will be the venue for the event?", answer: "All the editions of the event will be held at the campus of the KIET Group Of Institutions, Ghaziabad until and unless specified otherwise" },
@@ -17,7 +17,7 @@ const Footer = () => {
       ];
 
       setFaqData(fetchedFaqData);
-      // Initialize answersVisible state based on the number of FAQ items
+    
       setAnswersVisible(Array(fetchedFaqData.length).fill(false));
   }, []);
 
