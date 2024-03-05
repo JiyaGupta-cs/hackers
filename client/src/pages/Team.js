@@ -30,41 +30,57 @@ const Team = () => {
             </section>
 
             <section className='bg-black flex flex-col items-center justify-center gap-12 py-12'>
-                <div className='flex flex-col items-center justify-center gap-6 ' >
-                    <h3 className='text-red-600 text-2xl font-bold'>Faculty Co-ordinator</h3>
-                    <div className="cards flex flex-col gap-10 sm:flex-row">
-                        <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
-                            <img src={abhinav} className='rounded-full w-48  h-48' alt="" />
-                            <p className='text-white text-xl font-bold'>Dr Abhinav Juneja</p>
+                <div className="new flex flex-col gap-10 sm:flex-row">
+                    <div className='flex flex-col items-center justify-center gap-6'>
+                        <h3 className='text-red-600 text-2xl font-bold'>Head Of Department</h3>
+                        <div className="cards flex flex-col gap-10 sm:flex-row">
+                            <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
+                                <img src={abhinav} className='rounded-full w-48  h-48' alt="" />
+                                <p className='text-white text-xl font-bold'>Dr Abhinav Juneja</p>
+                            </div>
+                           
                         </div>
-                        <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
-                            <img src={rohit} className='rounded-full w-48  h-48' alt="" />
-                            <p className='text-white text-xl font-bold'>Dr Rohit Vashisht</p>
-                        </div>
-                    </div>
 
+                    </div>
+                    <div className='flex flex-col items-center justify-center gap-6'>
+                        <h3 className='text-red-600 text-2xl font-bold'>Faculty Co-ordinator</h3>
+                        <div className="cards flex flex-col gap-10 sm:flex-row">
+                            
+                            <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
+                                <img src={rohit} className='rounded-full w-48  h-48' alt="" />
+                                <p className='text-white text-xl font-bold'>Dr Rohit Vashisht</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div className='flex flex-col items-center justify-center gap-6'>
-                    <h3 className='text-red-600 text-2xl font-bold'>Chapter Lead</h3>
-                    <div className="cards flex flex-col gap-10 sm:flex-row">
-                        <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
-                            <img src={harveer} className='rounded-full w-48  h-48' alt="" />
-                            <p className='text-white text-xl font-bold'>Harveer Narwar</p>
+                <div className="new flex flex-col gap-10 sm:flex-row">
+                    <div className='flex flex-col items-center justify-center gap-6'>
+                        <h3 className='text-red-600 text-2xl font-bold'>Chapter Lead</h3>
+                        <div className="cards flex flex-col gap-10 sm:flex-row">
+                            <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
+                                <img src={raj} className='rounded-full w-48  h-48' alt="" />
+                                <p className='text-white text-xl font-bold'>Raj Pandey</p>
+                            </div>
+                           
                         </div>
-                        <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
-                            <img src={raj} className='rounded-full w-48  h-48' alt="" />
-                            <p className='text-white text-xl font-bold'>Raj Pandey</p>
-                        </div>
-                        <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
-                            <img src={ananya} className='rounded-full w-48  h-48' alt="" />
-                            <p className='text-white text-xl font-bold'>Ananya Srivastava</p>
-                        </div>
-                        <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
-                            <img src={kartikey} className='rounded-full w-48 h-48' alt="" />
-                            <p className='text-white text-xl font-bold'>Kartikey Mishra</p>
-                        </div>
-                    </div>
 
+                    </div>
+                    <div className='flex flex-col items-center justify-center gap-6'>
+                        <h3 className='text-red-600 text-2xl font-bold'>Chapter Conveners</h3>
+                        <div className="cards flex flex-col gap-10 sm:flex-row">
+                            
+                            <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
+                                <img src={ananya} className='rounded-full w-48  h-48' alt="" />
+                                <p className='text-white text-xl font-bold'>Ananya Srivastava</p>
+                            </div>
+                            <div className="image bg-[#404040] w-[65vw] sm:w-[17vw]  p-7 flex flex-col items-center justify-center gap-4 rounded-xl">
+                                <img src={kartikey} className='rounded-full w-48  h-48' alt="" />
+                                <p className='text-white text-xl font-bold'>Kartikey Mishra</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 <div className="new flex flex-col gap-10 sm:flex-row">
                     <div className='flex flex-col items-center justify-center gap-6'>
