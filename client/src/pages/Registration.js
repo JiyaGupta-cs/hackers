@@ -38,17 +38,15 @@ const Registration = () => {
       emailError: emailError,
       phoneError: phoneError,
     });
-    console.log(data);
-  }, []);
+    
+  },);
 
   const validateEmail = (email) => {
-    // Regular expression for email validation
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
   };
 
   const validatePhone = (phone) => {
-    // Regular expression for phone number validation (10 digits)
     const re = /^\d{10}$/;
     return re.test(phone);
   };
@@ -93,11 +91,10 @@ const Registration = () => {
         phoneError: phoneError,
       });
 
-      fetch("http://localhost:4000/register", {
+      fetch("https://backend-hackersmeetup.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          // add any other headers if required
         },
         body: JSON.stringify(data),
       })
@@ -108,6 +105,7 @@ const Registration = () => {
         .catch((error) => {
           console.error("Error:", error);
         });
+      
       
       setCompany("");
       setEmail("");
@@ -199,15 +197,15 @@ const Registration = () => {
             />
             {phoneError && <p className="text-red-500">{phoneError}</p>}
           </div>
-          <div class="w-full md:w-full  my-6">
+          <div className="w-full md:w-full  my-6">
             <label
-              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
               for="Occupation"
             >
               Occupation
             </label>
             <input
-              class="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               type="text"
               placeholder="Enter your Occupation"
               id="occupation"
@@ -215,30 +213,30 @@ const Registration = () => {
               onChange={(e) => setOccupation(e.target.value)}
             />
           </div>
-          <div class="w-full md:w-full  my-6">
+          <div className="w-full md:w-full  my-6">
             <label
-              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
               for="interest"
             >
               Area of interest in CyberSecurity
             </label>
             <input
-              class="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               type="text"
               id="interest"
               value={interest}
               onChange={(e) => setInterest(e.target.value)}
             />
           </div>
-          <div class="w-full md:w-full my-6">
+          <div className="w-full md:w-full my-6">
             <label
-              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
               for="name"
             >
               College Name / Company Name
             </label>
             <input
-              class="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
               type="text"
               id="c-name"
               value={company}

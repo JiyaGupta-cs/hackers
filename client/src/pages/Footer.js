@@ -35,22 +35,21 @@ const Footer = () => {
     <div>
   
 <footer
-  class="bg-black text-center lg:text-left">
+  className="bg-black text-center lg:text-left">
 
 <div className="faq_section_main">
 
 <div className="faq_section">
-<div class="py-10 bg-black sm:py-16 lg:py-24">
-   <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-6xl">
+<div className="py-10 bg-black sm:py-16 lg:py-24">
+   <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-6xl">
 
-       <div class="max-w-2xl mx-auto text-center mb-12">
-           <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+       <div className="max-w-2xl mx-auto text-center mb-12">
+           <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
            FAQ’s
            </h2>
        </div>
 
        <div className="flex flex-col gap-4">
-                   {/* FAQ section */}
                    {faqData.map((faq, index) => (
                        <div
                            key={index}
@@ -87,53 +86,53 @@ const Footer = () => {
        </div>
 </div>
   
-  <div class="mx-6 sm:mx-56 py-10 text-center md:text-left">
-    <div class="grid-1 grid gap-0 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+  <div className="mx-6 sm:mx-56 py-10 text-center md:text-left">
+    <div className="grid-1 grid gap-0 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
     
       
-      <div class="">
+      <div >
         <h6
-          class="text-white text-xl mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          className="text-white text-xl mb-4 flex justify-center font-semibold uppercase md:justify-start">
           Explore
         </h6>
-        <p class="mb-4">
-          <a href="https://www.kiet.edu/" target='_blank' class="text-white"
+        <p className="mb-4">
+          <a href="https://www.kiet.edu/" target='_blank' className="text-white"
             >KIET Group of Institutions</a>
         </p>
-        <p class="mb-4">
-          <a href="/about" class="text-white"
+        <p className="mb-4">
+          <a href="/about" className="text-white"
             >About Us</a>
         </p>
-        <p class="mb-4">
-          <a href="https://discord.gg/zCHzmxADmZ" target='_blank' class="text-white"
+        <p className="mb-4">
+          <a href="https://discord.gg/zCHzmxADmZ" target='_blank' className="text-white"
             >Join Us</a>
         </p>
       </div>
 
-      <div class="">
+      <div className="">
         <h6
-          class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
           ‎ 
         </h6>
-        <p class="mb-4">
-          <a href="/event" class="text-white"
+        <p className="mb-4">
+          <a href="/event" className="text-white"
             >Chapter Guidelines</a>
         </p>
-        <p class="mb-4">
-          <a href="/team" class="text-white"
+        <p className="mb-4">
+          <a href="/team" className="text-white"
             >Meet the team</a          >
         </p>
-        <p class="mb-4">
-          <a href="/footer" class="text-white"
+        <p className="mb-4">
+          <a href="/footer" className="text-white"
             >FAQs</a          >
         </p>
         
       </div>
     
       
-      <div class="">
+      <div className="">
         <h6
-          class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+          className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
           ‎
         </h6>
         <p className='text-white gap-2 '>
@@ -144,7 +143,7 @@ const Footer = () => {
   </div>
 
   <div className="bg-black p-6 text-center dark:bg-neutral-700 flex flex-col sm:flex-row sm:justify-around items-center gap-6">
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.893214057894!2d77.49584577474205!3d28.75260507861928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf47204fb9241%3A0xd11ed4123c7691fe!2sKIET%20GROUP%20OF%20INSTITUTIONS%2C%20Muradnagar%2C%20Uttar%20Pradesh%20201206!5e0!3m2!1sen!2sin!4v1708115942846!5m2!1sen!2sin" className='w-[90vw] h-[80vw] sm:w-[1087px] sm:h-[341px]' style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.893214057894!2d77.49584577474205!3d28.75260507861928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf47204fb9241%3A0xd11ed4123c7691fe!2sKIET%20GROUP%20OF%20INSTITUTIONS%2C%20Muradnagar%2C%20Uttar%20Pradesh%20201206!5e0!3m2!1sen!2sin!4v1708115942846!5m2!1sen!2sin" className='w-[90vw] h-[80vw] sm:w-[1087px] sm:h-[341px]' style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>  
   </div>
 
  
