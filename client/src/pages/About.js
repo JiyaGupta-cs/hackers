@@ -36,11 +36,11 @@ const About = () => {
             <div className="flex justify-around w-screen ">
 
             <div className="flex flex-col items-center p-4">
-              <img className="w-22 md:w-22" src={SmallPic1} alt="Small Pic 1" />
+              <img className="w-22 h-14   " src={SmallPic1} alt="Small Pic 1" />
               <p className="text-white  mt-6">Learn</p>
             </div>
             <div className="flex flex-col items-center p-4">
-              <img className="w-22" src={SmallPic2} alt="Small Pic 2" />
+              <img className="w-22 h-14" src={SmallPic2} alt="Small Pic 2" />
               <p className="text-white mt-2">Network</p>
             </div>
             <div className="flex flex-col items-center p-4">
