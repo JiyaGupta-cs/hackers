@@ -4,14 +4,14 @@ import yash from './images/yash.png'
 import dhruv from './images/dhruv.png'
 import abhinav from './images/abhinav.png'
 import rohit from './images/rohit.png'
-import harveer from './images/harveer.png'
 import raj from './images/raj_pandey.png'
-import ananya from './images/ananya_atus.png'
+import ananya from './images/ananya_.png'
 import kartikey from './images/kartikey.png'
 import shreya from './images/shreya.png'
 import aryan from './images/aryan.png'
 import sahil from './images/sahil.png'
 import akshay from './images/akshay.png'
+// import harveer from './images/harveer.png'
 
 
 
